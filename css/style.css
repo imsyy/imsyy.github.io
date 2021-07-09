@@ -4984,6 +4984,28 @@ span.title-page {
   background: linear-gradient(to bottom, transparent 60%, rgba(189,202,219,0.3) 0) no-repeat;
   display: initial;
 }
+.field-title {
+  margin: 10px 0 20px;
+  border-width: 1px 0 0;
+}
+.field {
+  border-color: #e6e6e6;
+  margin-bottom: 10px;
+  padding: 0;
+  border-style: solid;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.field legend {
+/*margin-left: 20px*/
+  text-align: center;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
 .md .link-card {
   width: 900px;
 }
@@ -5069,6 +5091,17 @@ ul.list-v.rightmenu {
   article#arc .timenode .meta i {
     display: none !important;
   }
+}
+.timeline {
+  margin-left: 10px;
+}
+.timenode:before,
+.timenode:after {
+  background: #e6e6e6 !important;
+  width: 1px !important;
+}
+.timenode .meta p {
+  font-weight: normal !important;
 }
 .aplayer-container meting-js {
   min-width: 320px;
