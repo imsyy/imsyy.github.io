@@ -6,7 +6,7 @@
   <link href="https://blog.imsyy.top/atom.xml" rel="self"/>
   
   <link href="https://blog.imsyy.top/"/>
-  <updated>2021-06-01T07:54:12.813Z</updated>
+  <updated>2021-07-10T08:53:51.614Z</updated>
   <id>https://blog.imsyy.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flex布局教程 - 语法详解</title>
+    <link href="https://blog.imsyy.top/posts/16316/"/>
+    <id>https://blog.imsyy.top/posts/16316/</id>
+    <published>2021-07-10T01:39:49.000Z</published>
+    <updated>2021-07-10T08:53:51.614Z</updated>
+    
+    
+    <summary type="html">Flex 布局已成为网页布局的首选方案。本文介绍它的语法，下一篇文章给出常见布局的 Flex 写法</summary>
+    
+    
+    
+    <category term="或许有用" scheme="https://blog.imsyy.top/categories/%E6%88%96%E8%AE%B8%E6%9C%89%E7%94%A8/"/>
+    
+    <category term="精华拾取" scheme="https://blog.imsyy.top/categories/%E7%B2%BE%E5%8D%8E%E6%8B%BE%E5%8F%96/"/>
+    
+    
+    <category term="CSS" scheme="https://blog.imsyy.top/tags/CSS/"/>
+    
+    <category term="Flex" scheme="https://blog.imsyy.top/tags/Flex/"/>
+    
+    <category term="弹性布局" scheme="https://blog.imsyy.top/tags/%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>基于 OneManager-php 搭建一个免费的 OneDrive 分享站</title>
@@ -75,7 +100,7 @@
     <link href="https://blog.imsyy.top/posts/18426/"/>
     <id>https://blog.imsyy.top/posts/18426/</id>
     <published>2021-01-02T10:31:14.000Z</published>
-    <updated>2021-05-26T11:04:26.740Z</updated>
+    <updated>2021-07-10T01:56:21.522Z</updated>
     
     
     <summary type="html">本文主要介绍 Markdown 的扩展语法</summary>
@@ -83,6 +108,8 @@
     
     
     <category term="或许有用" scheme="https://blog.imsyy.top/categories/%E6%88%96%E8%AE%B8%E6%9C%89%E7%94%A8/"/>
+    
+    <category term="精华拾取" scheme="https://blog.imsyy.top/categories/%E7%B2%BE%E5%8D%8E%E6%8B%BE%E5%8F%96/"/>
     
     
     <category term="Markdown" scheme="https://blog.imsyy.top/tags/Markdown/"/>
@@ -96,7 +123,7 @@
     <link href="https://blog.imsyy.top/posts/16325/"/>
     <id>https://blog.imsyy.top/posts/16325/</id>
     <published>2020-12-02T08:28:34.000Z</published>
-    <updated>2021-05-26T11:03:54.234Z</updated>
+    <updated>2021-07-10T02:06:12.425Z</updated>
     
     
     <summary type="html">本文主要介绍 Markdown 的基础语法</summary>
@@ -104,6 +131,8 @@
     
     
     <category term="或许有用" scheme="https://blog.imsyy.top/categories/%E6%88%96%E8%AE%B8%E6%9C%89%E7%94%A8/"/>
+    
+    <category term="精华拾取" scheme="https://blog.imsyy.top/categories/%E7%B2%BE%E5%8D%8E%E6%8B%BE%E5%8F%96/"/>
     
     
     <category term="Markdown" scheme="https://blog.imsyy.top/tags/Markdown/"/>
