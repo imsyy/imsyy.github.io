@@ -6,7 +6,7 @@
   <link href="https://blog.imsyy.top/atom.xml" rel="self"/>
   
   <link href="https://blog.imsyy.top/"/>
-  <updated>2021-07-10T08:53:51.614Z</updated>
+  <updated>2021-07-10T13:10:00.699Z</updated>
   <id>https://blog.imsyy.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Flex布局教程 - 实例详解</title>
+    <link href="https://blog.imsyy.top/posts/58122/"/>
+    <id>https://blog.imsyy.top/posts/58122/</id>
+    <published>2021-07-10T11:27:35.000Z</published>
+    <updated>2021-07-10T13:10:00.699Z</updated>
+    
+    
+    <summary type="html">上一篇文章介绍了 Flex 布局的语法，这篇介绍一下常见布局的 Flex 写法</summary>
+    
+    
+    
+    <category term="或许有用" scheme="https://blog.imsyy.top/categories/%E6%88%96%E8%AE%B8%E6%9C%89%E7%94%A8/"/>
+    
+    <category term="精华拾取" scheme="https://blog.imsyy.top/categories/%E7%B2%BE%E5%8D%8E%E6%8B%BE%E5%8F%96/"/>
+    
+    
+    <category term="CSS" scheme="https://blog.imsyy.top/tags/CSS/"/>
+    
+    <category term="Flex" scheme="https://blog.imsyy.top/tags/Flex/"/>
+    
+    <category term="弹性布局" scheme="https://blog.imsyy.top/tags/%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Flex布局教程 - 语法详解</title>
     <link href="https://blog.imsyy.top/posts/16316/"/>
     <id>https://blog.imsyy.top/posts/16316/</id>
     <published>2021-07-10T01:39:49.000Z</published>
-    <updated>2021-07-10T08:53:51.614Z</updated>
+    <updated>2021-07-10T13:10:20.520Z</updated>
     
     
     <summary type="html">Flex 布局已成为网页布局的首选方案。本文介绍它的语法，下一篇文章给出常见布局的 Flex 写法</summary>
