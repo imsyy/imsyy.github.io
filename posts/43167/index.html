@@ -1458,7 +1458,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
         <div id="full" class='cover-wrapper post blank' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div class='cover-bg' style='background-image:url()'></div>
           
           
           <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -1563,44 +1563,44 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="note info green"><p>为了演示方便，以下操作均使用 <code>Github</code> ，其他仓库操作过程大同小异</p></div>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>无论是部署 Hexo 还是从本地推送至代码仓库，我们都会用到 Git 命令来进行上传操作，下面就来讲讲如何使用 Git 命令来上传文件至代码仓库</p>
 <h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>无论是 Github 还是 Gitee，上传文件前都要创建相应的仓库（ New repository ）</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/github%20new%20repository.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/github%20new%20repository.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="GitHub 新建仓库"/></div><span class="image-caption">GitHub 新建仓库</span></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/gitee%20new%20repository.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/gitee%20new%20repository.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="Gitee 新建仓库"/></div><span class="image-caption">Gitee 新建仓库</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/github%20new%20repository.png" alt="GitHub 新建仓库"/></div><span class="image-caption">GitHub 新建仓库</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/gitee%20new%20repository.png" alt="Gitee 新建仓库"/></div><span class="image-caption">Gitee 新建仓库</span></div>
 <h2 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h2><h3 id="打开-Git-bash"><a href="#打开-Git-bash" class="headerlink" title="打开 Git bash"></a>打开 Git bash</h3><ul>
 <li><p>安装 git</p>
-<div class="tag link"><a class="link-card" title="Git Download" target="_blank" rel="noopener" href="https://git-scm.com/downloads/"><div class="left"><img src="https://img.imsyy.top/logo/git.png" class="lazyload" data-srcset="https://img.imsyy.top/logo/git.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">Git Download</p><p class="url">https://git-scm.com/downloads/</p></div></a></div></li>
+<div class="tag link"><a class="link-card" title="Git Download" target="_blank" rel="noopener" href="https://git-scm.com/downloads/"><div class="left"><img src="https://img.imsyy.top/logo/git.png"/></div><div class="right"><p class="text">Git Download</p><p class="url">https://git-scm.com/downloads/</p></div></a></div></li>
 <li><p>在需要上传的本地文件夹内右键打开 <code>Git bash</code></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-01.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-01.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="右键打开 Git bash"/></div><span class="image-caption">右键打开 Git bash</span></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-01.png" alt="右键打开 Git bash"/></div><span class="image-caption">右键打开 Git bash</span></div></li>
 </ul>
 <h3 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h3><p>输入 <code>git init</code> 指令，把该文件夹作为 <strong>本地仓库</strong></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-02.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-02.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="创建本地仓库"/></div><span class="image-caption">创建本地仓库</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-02.png" alt="创建本地仓库"/></div><span class="image-caption">创建本地仓库</span></div>
 
 <h3 id="git-add"><a href="#git-add" class="headerlink" title="git add ."></a>git add .</h3><p>输入 <code>git add .</code> 指令，添加该文件夹下的所有文件到本地仓库。<strong>add 后面的 <code>.</code> 表示添加所有文件，如果想要添加个别文件可以把 <code>.</code> 替换为相应文件名</strong></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-03.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-03.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="添加所有文件"/></div><span class="image-caption">添加所有文件</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-03.png" alt="添加所有文件"/></div><span class="image-caption">添加所有文件</span></div>
 
 <h3 id="git-commit-m-“注释”"><a href="#git-commit-m-“注释”" class="headerlink" title="git commit -m “注释”"></a>git commit -m “注释”</h3><p>输入 <code>git commit -m &quot;first commit&quot;</code> 指令，<code>git commit -m</code> 作用为 <strong>提交暂存区的文件</strong>（ 也就是上一步添加的文件 ），后面双引号内可以填写关于提交的注释信息</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-04.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-04.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="提交暂存区文件"/></div><span class="image-caption">提交暂存区文件</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-04.png" alt="提交暂存区文件"/></div><span class="image-caption">提交暂存区文件</span></div>
 
 <h3 id="git-remote-add-origin-仓库地址"><a href="#git-remote-add-origin-仓库地址" class="headerlink" title="git remote add origin 仓库地址"></a>git remote add origin 仓库地址</h3><p>输入 <code>git remote add origin 远程仓库地址</code> 指令，建立本地仓库与远程仓库的关联，指令后面的地址为 <strong>代码仓库上原有的目标仓库或刚创建的仓库的地址</strong></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-06.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-06.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="Github 仓库地址"/></div><span class="image-caption">Github 仓库地址</span></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-05.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-05.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="建立本地仓库与远程仓库的关联"/></div><span class="image-caption">建立本地仓库与远程仓库的关联</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-06.png" alt="Github 仓库地址"/></div><span class="image-caption">Github 仓库地址</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-05.png" alt="建立本地仓库与远程仓库的关联"/></div><span class="image-caption">建立本地仓库与远程仓库的关联</span></div>
 
 <h3 id="git-pull-–rebase-origin-分支名称"><a href="#git-pull-–rebase-origin-分支名称" class="headerlink" title="git pull –rebase origin 分支名称"></a>git pull –rebase origin 分支名称</h3><p>输入 <code>git pull --rebase origin master</code> 指令，将远程仓库的内容合并到本地仓库。如果远程仓库为空可以跳过这一步，<strong>如果远程仓库不为空，则必须进行这一步</strong>  </p>
 <div class="note info green"><p>其中的 <code>master</code> 为你要推送至仓库的分支名称，通常情况下为 <code>master</code></p></div>
 
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-07.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-07.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="仓库不为空时必须输入指令"/></div><span class="image-caption">仓库不为空时必须输入指令</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-07.png" alt="仓库不为空时必须输入指令"/></div><span class="image-caption">仓库不为空时必须输入指令</span></div>
 <h3 id="git-push-u-origin-分支名称"><a href="#git-push-u-origin-分支名称" class="headerlink" title="git push -u origin 分支名称"></a>git push -u origin 分支名称</h3><p>输入 <code>git push -u origin master</code> 指令，将本地仓库的文件推送到已经建立关联的远程仓库 <code>master</code> 分支  </p>
 <div class="note info green"><p>其中的 <code>master</code> 为你要推送至仓库的分支名称，通常情况下为 <code>master</code></p></div>
 
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-08.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-08.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="推送文件命令"/></div><span class="image-caption">推送文件命令</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-08.png" alt="推送文件命令"/></div><span class="image-caption">推送文件命令</span></div>
 
 <p>执行命令后就可以在远程仓库中看到已上传的本地文件</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-09.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-09.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="Github 仓库文件"/></div><span class="image-caption">Github 仓库文件</span></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-11.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-11.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="本地仓库文件"/></div><span class="image-caption">本地仓库文件</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-09.png" alt="Github 仓库文件"/></div><span class="image-caption">Github 仓库文件</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-11.png" alt="本地仓库文件"/></div><span class="image-caption">本地仓库文件</span></div>
 
 <div class="note bug red"><p>如果远程仓库不为空，且没有执行 <code>git pull --rebase origin master</code> 命令，则可能会发生报错</p></div>
 
 <h3 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h3><p>最后可以输入 <code>git status</code> 指令查看本地仓库的状态，本步也可以省略</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/43167/Git-10.png" class="lazyload" data-srcset="https://img.imsyy.top/post/43167/Git-10.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="查看本地仓库状态"/></div><span class="image-caption">查看本地仓库状态</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/43167/Git-10.png" alt="查看本地仓库状态"/></div><span class="image-caption">查看本地仓库状态</span></div>
 
 <h2 id="指令总结"><a href="#指令总结" class="headerlink" title="指令总结"></a>指令总结</h2><p>若本地仓库与远程仓库已有关联，之后推送该文件夹内的文件只需要输入以下指令即可</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . <span class="comment"># 添加该文件夹下的所有文件到本地仓库</span></span><br><span class="line">git commit -m <span class="string">&quot;first commit&quot;</span> <span class="comment"># 提交暂存区文件并注释</span></span><br><span class="line">git push -u origin master <span class="comment"># 本地仓库推送到代码仓库的 master 分支</span></span><br></pre></td></tr></table></figure>
@@ -2389,33 +2389,6 @@ var loadCSS = function( href, before, media, attributes ){
   },"IssuesJS")
 </script>
 
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 

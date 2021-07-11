@@ -1452,7 +1452,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
         <div id="full" class='cover-wrapper page blank' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div class='cover-bg' style='background-image:url()'></div>
           
           
           <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -1484,7 +1484,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <br>
 <div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><a class="#-1">壁纸</a></li><li class="tab"><a class="#-2">生活</a></li></ul><div class="tab-content"><div class="tab-pane active" id="-1"><details ><summary> 网站背景 </summary>
               <div class='content'>
-              <div class="gallery ">              <p><img src="https://cdn.jsdelivr.net/gh/imsyy/file/pic/email-pattern.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/imsyy/file/pic/email-pattern.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="本站背景「 亮色模式 」"><br><img src="https://cdn.jsdelivr.net/gh/imsyy/file/pic/folk-pattern-black.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/imsyy/file/pic/folk-pattern-black.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="本站背景「 暗色模式 」"></p>            </div>
+              <div class="gallery ">              <p><img src="https://cdn.jsdelivr.net/gh/imsyy/file/pic/email-pattern.png" alt="本站背景「 亮色模式 」"><br><img src="https://cdn.jsdelivr.net/gh/imsyy/file/pic/folk-pattern-black.png" alt="本站背景「 暗色模式 」"></p>            </div>
               </div>
             </details></div><div class="tab-pane" id="-2"><p>待更新</p></div></div></div>
 
@@ -2193,33 +2193,6 @@ var loadCSS = function( href, before, media, attributes ){
   },"IssuesJS")
 </script>
 
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 

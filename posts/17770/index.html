@@ -1458,7 +1458,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
         <div id="full" class='cover-wrapper post blank' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div class='cover-bg' style='background-image:url()'></div>
           
           
           <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -1561,57 +1561,57 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
   <p>阿里的服务器到期了，也没钱再续，于是原来的网盘系统 <a target="_blank" rel="noopener" href="https://github.com/cloudreve/Cloudreve">Cloudreve</a> 就废弃了。由于原来的后端储存使用的是微软的 OneDrive，便想着再找一个无需主机就能实现 OneDrive 文件共享的程序，本来想使用 <code>Oneindex</code> 的，但是原作者已经删库了，并且已经多年未更新了，只好放弃。不过最近在逛 GitHub 的时候，偶然发现了 <a target="_blank" rel="noopener" href="https://github.com/qkqpttgf/OneManager-php">OneManager-php</a> 这个只需要 <code>Heroku</code> 便能部署运行的程序，于是便试着搞一搞。</p>
-<h2 id="程序界面"><a href="#程序界面" class="headerlink" title="程序界面"></a>程序界面</h2><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/1.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/1.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="主界面"/></div><span class="image-caption">主界面</span></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/2.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/2.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="文件列表"/></div><span class="image-caption">文件列表</span></div>
-<div class="tag link"><a class="link-card" title="無名の资源库" target="_blank" rel="noopener" href="https://pan.imsyy.top/"><div class="left"><img src="https://cdn.jsdelivr.net/gh/imsyy/file/js/share/favicon.ico" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/imsyy/file/js/share/favicon.ico" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">無名の资源库</p><p class="url">https://pan.imsyy.top/</p></div></a></div>
+<h2 id="程序界面"><a href="#程序界面" class="headerlink" title="程序界面"></a>程序界面</h2><div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/1.png!small" alt="主界面"/></div><span class="image-caption">主界面</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/2.png!small" alt="文件列表"/></div><span class="image-caption">文件列表</span></div>
+<div class="tag link"><a class="link-card" title="無名の资源库" target="_blank" rel="noopener" href="https://pan.imsyy.top/"><div class="left"><img src="https://cdn.jsdelivr.net/gh/imsyy/file/js/share/favicon.ico"/></div><div class="right"><p class="text">無名の资源库</p><p class="url">https://pan.imsyy.top/</p></div></a></div>
 
 <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="OneDrive-账号"><a href="#OneDrive-账号" class="headerlink" title="OneDrive 账号"></a>OneDrive 账号</h3><p>需要准备一个 OneDrive 账号，最好储存为 5T 大小的那种。这方面的教程百度上一搜一大把，这里不做过多阐述，我这里使用的是 Microsoft 365 E5 开发者账号。当然个人版账号也是可以的，只是空间通常仅为 15G</p>
-<h3 id="注册-Heroku"><a href="#注册-Heroku" class="headerlink" title="注册 Heroku"></a>注册 Heroku</h3><div class="tag link"><a class="link-card" title="Heroku 账号注册" target="_blank" rel="noopener" href="https://signup.heroku.com/"><div class="left"><img src="https://img.imsyy.top/logo/heroku.ico" class="lazyload" data-srcset="https://img.imsyy.top/logo/heroku.ico" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">Heroku 账号注册</p><p class="url">https://signup.heroku.com/</p></div></a></div>
+<h3 id="注册-Heroku"><a href="#注册-Heroku" class="headerlink" title="注册 Heroku"></a>注册 Heroku</h3><div class="tag link"><a class="link-card" title="Heroku 账号注册" target="_blank" rel="noopener" href="https://signup.heroku.com/"><div class="left"><img src="https://img.imsyy.top/logo/heroku.ico"/></div><div class="right"><p class="text">Heroku 账号注册</p><p class="url">https://signup.heroku.com/</p></div></a></div>
 <p><strong>注意：</strong></p>
 <ul>
 <li>注册时最好注册两个账号，因为 Heroku 免费套餐每月只能运行 550 小时，两个账号可实现全月不间断运行</li>
-<li>注册时可能需要使用<strong>代理访问</strong>，否则无法通过谷歌人机验证<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/3.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/3.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="注意人机验证"/></div><span class="image-caption">注意人机验证</span></div></li>
+<li>注册时可能需要使用<strong>代理访问</strong>，否则无法通过谷歌人机验证<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/3.png!small" alt="注意人机验证"/></div><span class="image-caption">注意人机验证</span></div></li>
 </ul>
-<h3 id="注册-Cloudflare"><a href="#注册-Cloudflare" class="headerlink" title="注册 Cloudflare"></a>注册 Cloudflare</h3><div class="tag link"><a class="link-card" title="Cloudflare 账号注册" target="_blank" rel="noopener" href="https://dash.cloudflare.com/sign-up"><div class="left"><img src="https://img.imsyy.top/logo/cloudflare.ico" class="lazyload" data-srcset="https://img.imsyy.top/logo/cloudflare.ico" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">Cloudflare 账号注册</p><p class="url">https://dash.cloudflare.com/sign-up</p></div></a></div>
+<h3 id="注册-Cloudflare"><a href="#注册-Cloudflare" class="headerlink" title="注册 Cloudflare"></a>注册 Cloudflare</h3><div class="tag link"><a class="link-card" title="Cloudflare 账号注册" target="_blank" rel="noopener" href="https://dash.cloudflare.com/sign-up"><div class="left"><img src="https://img.imsyy.top/logo/cloudflare.ico"/></div><div class="right"><p class="text">Cloudflare 账号注册</p><p class="url">https://dash.cloudflare.com/sign-up</p></div></a></div>
 <p>Cloudflare 账号这玩意应该是人手一个了，就不细说了</p>
 <h2 id="程序部署"><a href="#程序部署" class="headerlink" title="程序部署"></a>程序部署</h2><h3 id="Heroku-端部署"><a href="#Heroku-端部署" class="headerlink" title="Heroku 端部署"></a>Heroku 端部署</h3><ul>
 <li><p>前往 OneManager-php 项目的 GitHub 仓库并 Fork（ 这里的 Fork 并非强制性要求 ）</p>
-<div class="tag link"><a class="link-card" title="OneManager-php" target="_blank" rel="noopener" href="https://github.com/qkqpttgf/OneManager-php"><div class="left"><img src="https://img.imsyy.top/logo/github.png" class="lazyload" data-srcset="https://img.imsyy.top/logo/github.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">OneManager-php</p><p class="url">https://github.com/qkqpttgf/OneManager-php</p></div></a></div></li>
+<div class="tag link"><a class="link-card" title="OneManager-php" target="_blank" rel="noopener" href="https://github.com/qkqpttgf/OneManager-php"><div class="left"><img src="https://img.imsyy.top/logo/github.png"/></div><div class="right"><p class="text">OneManager-php</p><p class="url">https://github.com/qkqpttgf/OneManager-php</p></div></a></div></li>
 <li><p>点击 Readme.md 中的 <code>Deploy to Heroku</code> 按钮</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/17.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/17.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/17.png!small"/></div></div></li>
 <li><p>跳转到 Heroku 后在 <code>App name</code> 栏中输入程序名称</p>
 <div class="note warning"><p>这里输入的内容即为将部署程序的子域名前缀</p></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/4.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/4.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/4.png!small"/></div></div></li>
 <li><p>输入完成后点击 <code>Deploy app</code></p>
 </li>
 <li><p>部署成功后点击 <code>View</code></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/5.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/5.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/5.png!small"/></div></div></li>
 <li><p>跳转到安装页面点击开始安装</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/6.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/6.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/6.png!small"/></div></div></li>
 <li><p>选择简体中文再点击新建 <code>API Key</code></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/7.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/7.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/7.png!small"/></div></div></li>
 <li><p>点击 Reveal 后复制 <code>API Key</code></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/8.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/8.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/8.png!small"/></div></div></li>
 <li><p>再输入后台管理密码</p>
 <div class="note warning"><p>必须输入，否则后期无法进入后台</p></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/9.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/9.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/9.png!small"/></div></div></li>
 <li><p>确认后进入主页面左上角进入后台添加盘</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/10.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/10.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/10.png!small"/></div></div></li>
 <li><p>输入标签及显示名称</p>
 </li>
 <li><p>选择你的 OneDrive 对应的版本</p>
 <div class="note green"><p>各种 A1，A1P，E3，E5 均为国际版</p></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/11.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/11.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/11.png!small"/></div></div></li>
 <li><p>点击确认后跳转至微软账号登陆界面</p>
 </li>
 <li><p>登录成功后如图所示</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/12.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/12.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/13.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/13.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="程序默认主界面"/></div><span class="image-caption">程序默认主界面</span></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/12.png!small"/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/13.png!small" alt="程序默认主界面"/></div><span class="image-caption">程序默认主界面</span></div></li>
 </ul>
 <h3 id="Cloudflare-端部署"><a href="#Cloudflare-端部署" class="headerlink" title="Cloudflare 端部署"></a>Cloudflare 端部署</h3><p>其实到此为止程序已经部署成功了，已经可以访问 <code>Heroku</code> 为你分配的域名来访问了，但是要想实现 24 小时不间断访问，则需要再注册一个 Heroku 账号并执行上述操作，并<strong>确保两个网址的内容一致</strong>，然后借助 <code>Cloudflare Workers</code> 来实现</p>
 <ul>
 <li><p>进入 <code>Workers</code></p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/14.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/14.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/14.png!small"/></div></div></li>
 <li><p>在脚本输入框中粘贴以下内容并将两个 Heroku 账号中程序部署的网址填入下方单双日</p>
 <div class="note green"><p>该代码来自 <a target="_blank" rel="noopener" href="https://www.daniao.org/10533.html">大鸟博客</a></p></div></li>
 </ul>
@@ -1619,18 +1619,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <ul>
 <li><p>填写完成后点击保存并部署即可看到 Cloudflare 给你提供的子域</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/16.png!small" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/16.png!small" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/16.png!small"/></div></div></li>
 <li><p>至此教程完成</p>
 </li>
 </ul>
 <h2 id="其他方面"><a href="#其他方面" class="headerlink" title="其他方面"></a>其他方面</h2><h3 id="程序美化"><a href="#程序美化" class="headerlink" title="程序美化"></a>程序美化</h3><p>程序默认主题的界面实在是不太美观，这里建议点击右下角来选择你认为合适的主题<br>我选择的是 <code>renexmoe</code> 主题，并对这个主题做出了一些修改。若你也想自定义主题或开发一套新主题，则需要前文提到的 <code>Fork</code> 该仓库，并将 <code>Heroku</code> 部署源改为你的仓库</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/18.png" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/18.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="将 Heroku 连接至 GitHub"/></div><span class="image-caption">将 Heroku 连接至 GitHub</span></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/18.png" alt="将 Heroku 连接至 GitHub"/></div><span class="image-caption">将 Heroku 连接至 GitHub</span></div>
 
 <p>当修改完成并推送至 <code>GitHub</code> 后即可点击 <code>Deploy Branch</code> 按钮更新程序部署</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/17770/19.png" class="lazyload" data-srcset="https://img.imsyy.top/post/17770/19.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/17770/19.png"/></div></div>
 
 <h3 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h3><p>觉着没有这个<ruby>必要<rt>tailan</rt></ruby>，我就没有弄。实在想自定义域名的朋友们可参考下面这篇文章</p>
-<div class="tag link"><a class="link-card" title="CloudFlare Workers 设置使用自己的域名" target="_blank" rel="noopener" href="https://vircloud.net/exp/cf-worker-domain.html"><div class="left"><img src="https://vircloud.net/usr/themes/armx/img/favicon.ico" class="lazyload" data-srcset="https://vircloud.net/usr/themes/armx/img/favicon.ico" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">CloudFlare Workers 设置使用自己的域名</p><p class="url">https://vircloud.net/exp/cf-worker-domain.html</p></div></a></div>
+<div class="tag link"><a class="link-card" title="CloudFlare Workers 设置使用自己的域名" target="_blank" rel="noopener" href="https://vircloud.net/exp/cf-worker-domain.html"><div class="left"><img src="https://vircloud.net/usr/themes/armx/img/favicon.ico"/></div><div class="right"><p class="text">CloudFlare Workers 设置使用自己的域名</p><p class="url">https://vircloud.net/exp/cf-worker-domain.html</p></div></a></div>
   
   
     
@@ -2413,33 +2413,6 @@ var loadCSS = function( href, before, media, attributes ){
   },"IssuesJS")
 </script>
 
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 

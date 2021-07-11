@@ -1458,7 +1458,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
         <div id="full" class='cover-wrapper post blank' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div class='cover-bg' style='background-image:url()'></div>
           
           
           <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -1577,7 +1577,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class="note warning"><p>注意，设为 <code>Flex</code> 布局以后，子元素的 <code>float</code>、<code>clear</code> 和<code> vertical-align</code> 属性将失效</p></div>
 
 <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>采用 Flex 布局的元素，称为 <code>Flex 容器</code>（ flex container ），简称「 容器 」。它的所有子元素自动成为容器成员，称为 <code>Flex 项目</code>（ flex item ），简称「 项目 」。</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/1.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/1.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:563px;"/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/1.png" style="width:563px;"/></div></div>
 
 <h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p>容器默认存在两根轴：水平的主轴（ <code>main axis</code> ）和垂直的交叉轴（ <code>cross axis</code> ）。主轴的开始位置（ 与边框的交叉点 ）叫做 <code>main start</code>，结束位置叫做 <code>main end</code> ；交叉轴的开始位置叫做 <code>cross start</code>，结束位置叫做 <code>cross end</code>。</p>
 <h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><p>项目默认沿主轴排列。单个项目占据的主轴空间叫做 <code>main size</code>，占据的交叉轴空间叫做 <code>cross size</code>。</p>
@@ -1592,7 +1592,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <h3 id="flex-direction-属性"><a href="#flex-direction-属性" class="headerlink" title="flex-direction 属性"></a>flex-direction 属性</h3><p><code>flex-direction</code> 属性用于决定主轴的方向（ 即项目的排列方向 ）</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">flex-direction</span>: row | row-reverse | column | column-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/2.1.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/2.1.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/2.1.png"/></div></div>
 
 <p>它可能有4个值</p>
 <ul>
@@ -1602,16 +1602,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>column-reverse：主轴为 <strong>垂直方向</strong>，起点在 <strong>下沿</strong></li>
 </ul>
 <h3 id="flex-wrap-属性"><a href="#flex-wrap-属性" class="headerlink" title="flex-wrap 属性"></a>flex-wrap 属性</h3><p>默认情况下，项目都排在一条线，又称「 轴线 」上。<code>flex-wrap</code> 属性用来定义，如果一条轴线排不下的情况下，如何换行</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/3.1.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/3.1.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/3.1.png"/></div></div>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>它可能取三个值</p>
 <ul>
 <li><p><code>nowrap</code>（ 默认值 ）：不换行</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/4.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/4.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/4.png"/></div></div></li>
 <li><p><code>wrap</code>：换行，第一行在上方</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/5.jpg" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/5.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/5.jpg"/></div></div></li>
 <li><p><code>wrap-reverse</code>：换行，第一行在下方</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/6.jpg" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/6.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></li>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/6.jpg"/></div></div></li>
 </ul>
 <h3 id="flex-flow-属性"><a href="#flex-flow-属性" class="headerlink" title="flex-flow 属性"></a>flex-flow 属性</h3><p><code>flex-flow</code> 属性是 <code>flex-direction</code> 属性和 <code>flex-wrap</code> 属性的简写形式，默认值为 <code>row nowrap</code></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">flex-flow</span>: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1619,33 +1619,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为 <strong>从左到右</strong></p>
 <div class="tabs" id="tab-id"><ul class="nav-tabs"><li class="tab active"><a class="#tab-id-1">flex-start</a></li><li class="tab"><a class="#tab-id-2">flex-end</a></li><li class="tab"><a class="#tab-id-3">center</a></li><li class="tab"><a class="#tab-id-4">space-between</a></li><li class="tab"><a class="#tab-id-5">space-around</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-id-1"><p class='p center'>「 默认值 」左对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/7.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/7.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-2"><p class='p center'>右对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/8.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/8.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-3"><p class='p center'>居中</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/9.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/9.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-4"><p class='p center'>两端对齐，项目之间的间隔都相等</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/10.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/10.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-5"><p class='p center'>每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/11.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/11.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:100%;"/></div></div></div></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/7.png" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-2"><p class='p center'>右对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/8.png" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-3"><p class='p center'>居中</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/9.png" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-4"><p class='p center'>两端对齐，项目之间的间隔都相等</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/10.png" style="width:100%;"/></div></div></div><div class="tab-pane" id="tab-id-5"><p class='p center'>每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/11.png" style="width:100%;"/></div></div></div></div></div>
 
 <h3 id="align-items-属性"><a href="#align-items-属性" class="headerlink" title="align-items 属性"></a>align-items 属性</h3><p><code>align-items</code> 属性定义项目在交叉轴上如何对齐</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: stretch | flex-start | flex-end | center | baseline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>它可能取5个值。具体的对齐方式与交叉轴的方向有关，下面假设交叉轴 <strong>从上到下</strong></p>
 <div class="tabs" id="tab-id"><ul class="nav-tabs"><li class="tab active"><a class="#tab-id-1">stretch</a></li><li class="tab"><a class="#tab-id-2">flex-start</a></li><li class="tab"><a class="#tab-id-3">flex-end</a></li><li class="tab"><a class="#tab-id-4">center</a></li><li class="tab"><a class="#tab-id-5">baseline</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-id-1"><p class='p center'>「 默认值 」如果项目未设置高度或设为 `auto`，将占满整个容器的高度</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/12.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/12.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-2"><p class='p center'>与交叉轴的起点对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/13.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/13.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-3"><p class='p center'>与交叉轴的终点对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/14.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/14.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-4"><p class='p center'>与交叉轴的中点对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/15.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/15.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-5"><p class='p center'>与项目的第一行文字的基线对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/16.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/16.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/12.png"/></div></div></div><div class="tab-pane" id="tab-id-2"><p class='p center'>与交叉轴的起点对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/13.png"/></div></div></div><div class="tab-pane" id="tab-id-3"><p class='p center'>与交叉轴的终点对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/14.png"/></div></div></div><div class="tab-pane" id="tab-id-4"><p class='p center'>与交叉轴的中点对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/15.png"/></div></div></div><div class="tab-pane" id="tab-id-5"><p class='p center'>与项目的第一行文字的基线对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/16.png"/></div></div></div></div></div>
 
 <h3 id="align-content-属性"><a href="#align-content-属性" class="headerlink" title="align-content 属性"></a>align-content 属性</h3><p><code>align-content</code> 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性<strong>不起作用</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">align-content</span>: stretch | flex-start | flex-end | center | space-between | space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>该属性可能取6个值</p>
 <div class="tabs" id="tab-id"><ul class="nav-tabs"><li class="tab active"><a class="#tab-id-1">stretch</a></li><li class="tab"><a class="#tab-id-2">flex-start</a></li><li class="tab"><a class="#tab-id-3">flex-end</a></li><li class="tab"><a class="#tab-id-4">center</a></li><li class="tab"><a class="#tab-id-5">space-between</a></li><li class="tab"><a class="#tab-id-6">space-around</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-id-1"><p class='p center'>「 默认值 」轴线占满整个交叉轴</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/17.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/17.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-2"><p class='p center'>与交叉轴的起点对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/18.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/18.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-3"><p class='p center'>与交叉轴的终点对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/19.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/19.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-4"><p class='p center'>与交叉轴的中点对齐</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/20.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/20.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-5"><p class='p center'>与交叉轴两端对齐，轴线之间的间隔平均分布</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/21.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/21.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div><div class="tab-pane" id="tab-id-6"><p class='p center'>每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍</p>
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/22.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/22.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div></div></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/17.png"/></div></div></div><div class="tab-pane" id="tab-id-2"><p class='p center'>与交叉轴的起点对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/18.png"/></div></div></div><div class="tab-pane" id="tab-id-3"><p class='p center'>与交叉轴的终点对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/19.png"/></div></div></div><div class="tab-pane" id="tab-id-4"><p class='p center'>与交叉轴的中点对齐</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/20.png"/></div></div></div><div class="tab-pane" id="tab-id-5"><p class='p center'>与交叉轴两端对齐，轴线之间的间隔平均分布</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/21.png"/></div></div></div><div class="tab-pane" id="tab-id-6"><p class='p center'>每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍</p>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/22.png"/></div></div></div></div></div>
 
 <h2 id="项目的属性"><a href="#项目的属性" class="headerlink" title="项目的属性"></a>项目的属性</h2><p>以下6个属性设置在项目上</p>
 <ul>
@@ -1659,18 +1659,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="order-属性"><a href="#order-属性" class="headerlink" title="order 属性"></a>order 属性</h3><p><code>order</code> 属性定义项目的排列顺序。数值越小，排列越靠前，默认为<code>0</code></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">order</span>: &lt;integer&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/23.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/23.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/23.png"/></div></div>
 
 <h3 id="flex-grow-属性"><a href="#flex-grow-属性" class="headerlink" title="flex-grow 属性"></a>flex-grow 属性</h3><p><code>flex-grow</code> 属性定义项目的放大比例，默认为<code>0</code>，即如果存在剩余空间，也不放大</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex-grow</span>: &lt;number&gt;; <span class="comment">/* default 0 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/24.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/24.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/24.png"/></div></div>
 
 <p>如果所有项目的 <code>flex-grow</code> 属性都为<code>1</code>，则它们将等分剩余空间（ 如果有的话 ）。如果一个项目的 <code>flex-grow</code> 属性为<code>2</code>，其他项目都为<code>1</code>，则前者占据的剩余空间将比其他项多一倍</p>
 <h3 id="flex-shrink-属性"><a href="#flex-shrink-属性" class="headerlink" title="flex-shrink 属性"></a>flex-shrink 属性</h3><p><code>flex-shrink</code> 属性定义了项目的缩小比例，默认为<code>1</code>，即如果空间不足，该项目将缩小</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">flex-shrink</span>: &lt;number&gt;; <span class="comment">/* default 1 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/25.jpg" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/25.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/25.jpg"/></div></div>
 
 <p>如果所有项目的 <code>flex-shrink</code> 属性都为<code>1</code>，当空间不足时，都将等比例缩小。如果一个项目的 <code>flex-shrink</code> 属性为0，其他项目都为<code>1</code>，则空间不足时，前者不缩小</p>
 <div class="note warning"><p>负值对该属性无效</p></div>
@@ -1688,7 +1688,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="align-self-属性"><a href="#align-self-属性" class="headerlink" title="align-self 属性"></a>align-self 属性</h3><p><code>align-self</code> 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 <code>align-items</code> 属性。默认值为 <code>auto</code>，表示继承父元素的 <code>align-items</code> 属性，如果没有父元素，则等同于 <code>stretch</code></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">align-self</span>: auto | flex-start | flex-end | center | baseline | stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://img.imsyy.top/post/16316/26.png" class="lazyload" data-srcset="https://img.imsyy.top/post/16316/26.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div></div>
+<div class="img-wrap"><div class="img-bg"><img class="img" src="https://img.imsyy.top/post/16316/26.png"/></div></div>
 
 <p>该属性可能取6个值，除了<code>auto</code>，其他都与 <code>align-items</code> 属性完全一致</p>
 
@@ -2461,33 +2461,6 @@ var loadCSS = function( href, before, media, attributes ){
   },"IssuesJS")
 </script>
 
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 

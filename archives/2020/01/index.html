@@ -1456,7 +1456,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
         <div id="full" class='cover-wrapper  blank' style="display: none;">
           
-            <div class='cover-bg lazyload placeholder' data-bg=""></div>
+            <div class='cover-bg' style='background-image:url()'></div>
           
           
           <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
@@ -1773,8 +1773,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="webinfo-item">
           <div>最后活动：</div>
           
-            <div id="last-update" style="display: none;">Sat Jul 10 2021 22:53:03 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-07-10 日</div>
+            <div id="last-update" style="display: none;">Sun Jul 11 2021 17:25:57 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2021-07-11 日</div>
           
         </div>
         
@@ -1824,7 +1824,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-07-10 日';
+            document.getElementById('last-update-show').innerHTML = '2021-07-11 日';
           }
         </script>
         
@@ -2495,33 +2495,6 @@ var loadCSS = function( href, before, media, attributes ){
   },"IssuesJS")
 </script>
 
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
-  // Set the options globally
-  // to make LazyLoad self-initialize
-  window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 0
-  };
-  // Listen to the initialization event
-  // and get the instance of LazyLoad
-  window.addEventListener(
-    "LazyLoad::Initialized",
-    function (event) {
-      window.lazyLoadInstance = event.detail.instance;
-    },
-    false
-  );
-  document.addEventListener('DOMContentLoaded', function () {
-    lazyLoadInstance.update();
-  });
-  document.addEventListener('pjax:complete', function () {
-    lazyLoadInstance.update();
-  });
-</script>
 
 
 
