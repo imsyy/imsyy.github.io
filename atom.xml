@@ -110,13 +110,13 @@
     <category term="一些教程" scheme="https://blog.imsyy.top/categories/%E4%B8%80%E4%BA%9B%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://blog.imsyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="Git" scheme="https://blog.imsyy.top/tags/Git/"/>
     
     <category term="Github" scheme="https://blog.imsyy.top/tags/Github/"/>
     
     <category term="Gitee" scheme="https://blog.imsyy.top/tags/Gitee/"/>
+    
+    <category term="教程" scheme="https://blog.imsyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -286,9 +286,9 @@
     <category term="一些教程" scheme="https://blog.imsyy.top/categories/%E4%B8%80%E4%BA%9B%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="layer" scheme="https://blog.imsyy.top/tags/layer/"/>
-    
     <category term="教程" scheme="https://blog.imsyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="layer" scheme="https://blog.imsyy.top/tags/layer/"/>
     
   </entry>
   
