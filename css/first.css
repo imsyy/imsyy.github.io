@@ -2042,6 +2042,9 @@ ul.list-v >li>a:hover {
   :root:not([data-user-color-scheme]) span.aplayer-list-titlea {
     color: var(--color-h1) !important;
   }
+  :root:not([data-user-color-scheme]) .genshin {
+    background-image: url("https://img.imsyy.top/logo/genshin-dark.png") !important;
+  }
 }
 [data-user-color-scheme='dark'] {
   --color-site-body: #000;
@@ -2344,6 +2347,9 @@ ul.list-v >li>a:hover {
 }
 [data-user-color-scheme='dark'] span.aplayer-list-titlea {
   color: var(--color-h1) !important;
+}
+[data-user-color-scheme='dark'] .genshin {
+  background-image: url("https://img.imsyy.top/logo/genshin-dark.png") !important;
 }
 @media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
   .l_header .m_search {
