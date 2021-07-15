@@ -4873,6 +4873,27 @@ img.lazyload:not(.placeholder).loaded {
   border: 1px solid #d1d5da;
   border-radius: 6px;
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container ul.list-v {
+  animation: fade-in;
+  animation-duration: 0.3s;
+  -webkit-animation: fade-in 0.3s;
+}
+ul.list-v.rightmenu {
+  animation: fade-in;
+  animation-duration: 0.1s;
+  -webkit-animation: fade-in 0.1s;
+}
 .l_header {
   left: 0 !important;
   border-radius: 0 !important;
@@ -5011,6 +5032,50 @@ svg.icon {
 }
 ul.list-v.rightmenu {
   text-align: center;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 768px) {
   .l_header .switcher .s-toc {
