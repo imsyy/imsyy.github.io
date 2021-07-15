@@ -200,6 +200,20 @@
   </url>
   
   <url>
+    <loc>https://blog.imsyy.top/tags/layer/</loc>
+    <lastmod>2021-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.imsyy.top/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-07-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.imsyy.top/tags/%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
@@ -221,14 +235,14 @@
   </url>
   
   <url>
-    <loc>https://blog.imsyy.top/tags/layer/</loc>
+    <loc>https://blog.imsyy.top/tags/Encrypt/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.imsyy.top/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.imsyy.top/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -250,20 +264,6 @@
   
   <url>
     <loc>https://blog.imsyy.top/tags/Gitee/</loc>
-    <lastmod>2021-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.imsyy.top/tags/Encrypt/</loc>
-    <lastmod>2021-07-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.imsyy.top/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -335,14 +335,14 @@
   </url>
   
   <url>
-    <loc>https://blog.imsyy.top/categories/%E4%B8%80%E4%BA%9B%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.imsyy.top/categories/%E7%B2%BE%E5%8D%8E%E6%8B%BE%E5%8F%96/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.imsyy.top/categories/%E7%B2%BE%E5%8D%8E%E6%8B%BE%E5%8F%96/</loc>
+    <loc>https://blog.imsyy.top/categories/%E4%B8%80%E4%BA%9B%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

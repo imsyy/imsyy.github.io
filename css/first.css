@@ -1750,7 +1750,7 @@ ul.list-v >li>a:hover {
     --color-site-bg: #222;
     --color-site-inner: rgba(238,238,238,0.8);
     --color-site-footer: #aaa;
-    --color-card: #181818;
+    --color-card: #333;
     --color-text: rgba(238,238,238,0.8);
     --color-block: #3a3a3a;
     --color-codeblock: #343a3c;
@@ -2039,8 +2039,32 @@ ul.list-v >li>a:hover {
   :root:not([data-user-color-scheme]) .highlight:hover figcaption {
     background: #3a3a3a !important;
   }
-  :root:not([data-user-color-scheme]) span.aplayer-list-titlea {
-    color: var(--color-h1) !important;
+  :root:not([data-user-color-scheme]) .highlight>table {
+    background-color: #272727 !important;
+  }
+  :root:not([data-user-color-scheme]) .highlight >table .gutter,
+  :root:not([data-user-color-scheme]) .highlight figcaption {
+    background: #3a3a3a !important;
+  }
+  :root:not([data-user-color-scheme]) .btn-copy:hover {
+    color: var(--color-text) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([data-user-color-scheme]) .aplayer .aplayer-info .aplayer-music .aplayer-title,
+  :root:not([data-user-color-scheme]) .aplayer .aplayer-info .aplayer-music .aplayer-author,
+  :root:not([data-user-color-scheme]) .aplayer .aplayer-lrc p,
+  :root:not([data-user-color-scheme]) span.aplayer-list-title,
+  :root:not([data-user-color-scheme]) span.aplayer-list-author {
+    color: var(--color-text) !important;
+  }
+  :root:not([data-user-color-scheme]) .aplayer .aplayer-list ol li {
+    border-top: 1px solid #242424 !important;
+  }
+  :root:not([data-user-color-scheme]) .aplayer .aplayer-lrc:after {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #222) !important;
+  }
+  :root:not([data-user-color-scheme]) .aplayer .aplayer-list ol li.aplayer-list-light {
+    background: #181818 !important;
   }
   :root:not([data-user-color-scheme]) .genshin {
     background-image: url("https://img.imsyy.top/logo/genshin-dark.png") !important;
@@ -2051,7 +2075,7 @@ ul.list-v >li>a:hover {
   --color-site-bg: #222;
   --color-site-inner: rgba(238,238,238,0.8);
   --color-site-footer: #aaa;
-  --color-card: #181818;
+  --color-card: #333;
   --color-text: rgba(238,238,238,0.8);
   --color-block: #3a3a3a;
   --color-codeblock: #343a3c;
@@ -2345,8 +2369,32 @@ ul.list-v >li>a:hover {
 [data-user-color-scheme='dark'] .highlight:hover figcaption {
   background: #3a3a3a !important;
 }
-[data-user-color-scheme='dark'] span.aplayer-list-titlea {
-  color: var(--color-h1) !important;
+[data-user-color-scheme='dark'] .highlight>table {
+  background-color: #272727 !important;
+}
+[data-user-color-scheme='dark'] .highlight >table .gutter,
+[data-user-color-scheme='dark'] .highlight figcaption {
+  background: #3a3a3a !important;
+}
+[data-user-color-scheme='dark'] .btn-copy:hover {
+  color: var(--color-text) !important;
+  background: var(--color-site-bg) !important;
+}
+[data-user-color-scheme='dark'] .aplayer .aplayer-info .aplayer-music .aplayer-title,
+[data-user-color-scheme='dark'] .aplayer .aplayer-info .aplayer-music .aplayer-author,
+[data-user-color-scheme='dark'] .aplayer .aplayer-lrc p,
+[data-user-color-scheme='dark'] span.aplayer-list-title,
+[data-user-color-scheme='dark'] span.aplayer-list-author {
+  color: var(--color-text) !important;
+}
+[data-user-color-scheme='dark'] .aplayer .aplayer-list ol li {
+  border-top: 1px solid #242424 !important;
+}
+[data-user-color-scheme='dark'] .aplayer .aplayer-lrc:after {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0, #222) !important;
+}
+[data-user-color-scheme='dark'] .aplayer .aplayer-list ol li.aplayer-list-light {
+  background: #181818 !important;
 }
 [data-user-color-scheme='dark'] .genshin {
   background-image: url("https://img.imsyy.top/logo/genshin-dark.png") !important;
